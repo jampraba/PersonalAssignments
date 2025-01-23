@@ -21,7 +21,6 @@ public RemoteWebDriver  driver;
 public  void precondition(String url,String username,String password,String browser){
 		cp = new ChromeOptions();
 		cp.addArguments("--disable-notifications");
-		
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver(cp);
 		}else if (browser.equalsIgnoreCase("edge")) {

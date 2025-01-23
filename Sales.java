@@ -10,19 +10,7 @@ import org.testng.annotations.Test;
 
 
 public class Sales extends   Projectspecificmethod {
-	  @DataProvider(name = "jamudata")
-	public String[][] jamset() {
-		String[][] jp= new String[2][3];
-		jp[0][0]="jam";
-		jp[0][1]="Testleaf";
-		jp[0][2]="Salesforce";
-		
-		jp[1][0]="praba";
-		jp[1][1]="Testleaf";
-		jp[1][2]="sales";
-		
-		return jp;
-	}
+	 
 
 @Test(dataProvider = "jamudata")
 	public void salesforce(String Name,String Comname,String Descript) throws InterruptedException {
